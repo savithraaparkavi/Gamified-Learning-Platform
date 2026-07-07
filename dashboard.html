@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard - GyanPlay</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="topbar">
+      <h2 id="welcomeMsg">Welcome!</h2>
+      <div class="xp-badge">⭐ <span id="xpCount">0</span> XP</div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label">Level <span id="levelNum">1</span></div>
+      <div class="progress-bar"><div id="progressFill" class="progress-fill"></div></div>
+    </div>
+
+    <h3>Choose a Subject</h3>
+    <div class="subject-grid">
+      <div class="subject-card" onclick="goToQuiz('math')">
+        <div class="icon">➗</div><p>Math</p>
+      </div>
+      <div class="subject-card" onclick="goToQuiz('science')">
+        <div class="icon">🔬</div><p>Science</p>
+      </div>
+      <div class="subject-card" onclick="goToQuiz('language')">
+        <div class="icon">📖</div><p>Language</p>
+      </div>
+    </div>
+
+    <h3>🏆 Village Leaderboard</h3>
+    <div id="leaderboard" class="leaderboard"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
