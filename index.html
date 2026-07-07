@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GyanPlay - Gamified Learning</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container center-screen">
+    <h1 class="logo"> GyanPlay</h1>
+    <p class="tagline">Learn. Play. Level Up.</p>
+
+    <div class="card login-card">
+      <label for="studentName">Enter your name</label>
+      <input type="text" id="studentName" placeholder="e.g. Kavya">
+
+      <label for="studentClass">Select your class</label>
+      <select id="studentClass">
+        <option value="3">Class 3</option>
+        <option value="4">Class 4</option>
+        <option value="5">Class 5</option>
+        <option value="6">Class 6</option>
+      </select>
+
+      <label for="langSelect">Language</label>
+      <select id="langSelect">
+        <option value="en">English</option>
+        <option value="ta">தமிழ்</option>
+      </select>
+
+      <button onclick="startLearning()">Start Learning 🚀</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
