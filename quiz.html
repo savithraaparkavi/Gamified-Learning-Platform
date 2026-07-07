@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz - GyanPlay</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="topbar">
+      <button class="back-btn" onclick="window.location.href='dashboard.html'">← Back</button>
+      <div class="xp-badge">⭐ <span id="xpCount">0</span> XP</div>
+    </div>
+
+    <div class="card quiz-card">
+      <p class="quiz-progress" id="quizProgress">Question 1 of 5</p>
+      <h2 id="questionText">Loading question...</h2>
+      <button class="speak-btn" onclick="speakQuestion()">🔊 Read Aloud</button>
+
+      <div id="optionsWrap" class="options-wrap"></div>
+
+      <p id="feedbackText" class="feedback"></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
